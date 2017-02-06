@@ -18,4 +18,4 @@ variable points to a new empty object, and that object is returned from the
 function automatically.
 
 Immediately Invoked Function Expressions(IIFE): Self invoking anonymous function e.g:
-````(function(){console.log('Hello, I'm an IIFE');}())````
+````(function(){console.log('Hello, I'm an IIFE');}());````
