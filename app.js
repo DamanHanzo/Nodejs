@@ -1,5 +1,20 @@
-var greet = require('./Nodejs/greetings') //way to reference other js files in the same folder
-greet();
+// var greet = require('./Nodejs/greetings') //way to reference other js files in the same folder
+// greet();
+
+var Emitter = require('./emitter.js');
+
+var emtr = new Emitter();
+
+emtr.on('greet', function(){
+    console.log('Hello, I am a listener number 1!');
+});
+
+emtr.on('greet', function(){
+    console.log('Hello, I am a listener number 2');
+});
+
+emtr.emit('greet');
+
 
 //function statement
 // function greet(h){

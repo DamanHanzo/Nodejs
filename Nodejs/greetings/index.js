@@ -14,7 +14,7 @@ const rl = readline.createInterface({
 
 
 function evalGreet(){
-    rl.question('Please select a language: 1) English 2) Russian: ',(answer) => {
+    rl.question('Please select a language: 1) English 2) Russian: ', (answer) => {
         if(answer == '1'){
             english();
             rl.close();
