@@ -1,19 +1,20 @@
 // var greet = require('./Nodejs/greetings') //way to reference other js files in the same folder
 // greet();
 
-var Emitter = require('./emitter.js');
+var Emitter = require('./emitter');
+var eventConfig = require('./config').events;
 
 var emtr = new Emitter();
 
-emtr.on('greet', function(){
+emtr.on(eventConfig.GREET, function(){
     console.log('Hello, I am a listener number 1!');
 });
 
-emtr.on('greet', function(){
-    console.log('Hello, I am a listener number 2');
+emtr.on(eventConfig.GREET, function(){
+    console.log('Hello, I am a listener number 2!');
 });
 
-emtr.emit('greet');
+emtr.emit(eventConfig.GREET);
 
 
 //function statement
@@ -84,3 +85,25 @@ emtr.emit('greet');
 // c.prop1 = {}; 
 // changeObj(c);// objects are passed by reference
 // console.log(c);
+
+
+var person = {
+    firstName: '',
+    lastName: '',
+    greet: function() {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+
+var john = Object.create(person);
+
+john.firstName = 'Johnny';
+john.lastName = 'Boy';
+
+console.log(john.greet());
+
+
+//`: called a back tick
+
+var userName = 'John Doe';
+var saySomething = `Hello ${userName}`;
