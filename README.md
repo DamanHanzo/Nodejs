@@ -29,3 +29,6 @@ Callback: A function passed to some other function, which we assume will be Invo
 at some point.
 
 Non-blocking: Doing other things without stopping your program from running.
+
+MIME Type: A standard for specifying the type of data being sent.
+- Stands for 'Multipurpose Internet Mail Extensions'
