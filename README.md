@@ -27,3 +27,5 @@ everything is still based on prototypal Inheritance.
 
 Callback: A function passed to some other function, which we assume will be Invoked
 at some point.
+
+Non-blocking: Doing other things without stopping your program from running.
