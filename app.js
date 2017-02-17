@@ -1,20 +1,20 @@
 // var greet = require('./Nodejs/greetings') //way to reference other js files in the same folder
 // greet();
 
-var Emitter = require('./emitter');
-var eventConfig = require('./config').events;
+// var Emitter = require('./emitter');
+// var eventConfig = require('./config').events;
 
-var emtr = new Emitter();
+// var emtr = new Emitter();
 
-emtr.on(eventConfig.GREET, function(){
-    console.log('Hello, I am a listener number 1!');
-});
+// emtr.on(eventConfig.GREET, function(){
+//     console.log('Hello, I am a listener number 1!');
+// });
 
-emtr.on(eventConfig.GREET, function(){
-    console.log('Hello, I am a listener number 2!');
-});
+// emtr.on(eventConfig.GREET, function(){
+//     console.log('Hello, I am a listener number 2!');
+// });
 
-emtr.emit(eventConfig.GREET);
+// emtr.emit(eventConfig.GREET);
 
 
 //function statement
@@ -130,7 +130,7 @@ obj.greet.apply({name: "Jane Doe"});
  class Insaan {
      constructor(firstName, lastName) {
          this.firstName = firstName;
-         this.lastName = lastName;
+         this.lastName = lastName; 
      }
 
      greet() {
@@ -140,3 +140,28 @@ obj.greet.apply({name: "Jane Doe"});
 
  var aadmi = new Insaan('Chand', 'Singh');
  aadmi.greet();
+
+var EventEmitter = require('events'); // loads up the events lib
+var util = require('util'); // loads up the util lib
+
+var Greetr = require('./greetr');
+
+// function Greetr() {
+//     EventEmitter.call(this); // pointing the 'this' variable to 'events' lib
+//     this.greeting = 'Hello World!'; 
+// }
+
+// util.inherits(Greetr, EventEmitter);
+
+// Greetr.prototype.greet = function(data) {
+//     console.log(this.greeting + ':' + data);
+//     this.emit('greet', data);
+// }
+
+var greetr1 = new Greetr();
+
+greetr1.on('greet', function(data){
+    console.log('Someone greeted!: '+ data);
+});
+
+greetr1.greet('Tony');
