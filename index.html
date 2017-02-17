@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <style>
+            .container {
+                color: steelblue;
+            }
+        </style>
+        <script>
+            (function(){setInterval(function(){(function(){var colors = ['black', 'red', 'yellow', 'orange', 'grey', 'steelblue'];var min = 1;var max = 4;
+            var randomColor = Math.floor(Math.random()*(max - min) + min);return document.getElementById('Title').style.color = colors[randomColor]; })();}, 3000);})();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="Title">
+                <h1>Hello World!</h1>
+            </div>
+    </body>
+</html>
