@@ -117,3 +117,9 @@ var obj = {
 }
 
 obj.greet.call({name: "Jane Doe"});
+obj.greet.apply({name: "Jane Doe"});
+
+//call vs apply: for takes in additional paramaters followed by a comma ex:
+//obj.greet.call({name: 'Jane Doe'}, param1, param 2, ...)
+//apply takes additional parameters in the form of an array for ex
+//obj.greet.apply({name: 'Jane Doe'}, [param1, params2, params3, ...])
