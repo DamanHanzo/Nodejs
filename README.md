@@ -21,3 +21,6 @@ Immediately Invoked Function Expressions(IIFE): Self invoking anonymous function
 ````(function(){console.log('Hello, I'm an IIFE');}());````
 
 Magic String: A string that has some special meaning in our code.
+
+"class" keyword is nothing fancy. It's just syntactic sugar i.e behind the scenes 
+everything is still based on prototypal Inheritance.
