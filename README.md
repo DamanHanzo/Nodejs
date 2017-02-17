@@ -24,3 +24,6 @@ Magic String: A string that has some special meaning in our code.
 
 "class" keyword is nothing fancy. It's just syntactic sugar i.e behind the scenes 
 everything is still based on prototypal Inheritance.
+
+Callback: A function passed to some other function, which we assume will be Invoked
+at some point.
