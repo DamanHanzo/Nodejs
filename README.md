@@ -19,3 +19,5 @@ function automatically.
 
 Immediately Invoked Function Expressions(IIFE): Self invoking anonymous function e.g:
 ````(function(){console.log('Hello, I'm an IIFE');}());````
+
+Magic String: A string that has some special meaning in our code.
