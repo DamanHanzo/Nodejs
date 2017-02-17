@@ -120,6 +120,23 @@ obj.greet.call({name: "Jane Doe"});
 obj.greet.apply({name: "Jane Doe"});
 
 //call vs apply: for takes in additional paramaters followed by a comma ex:
-//obj.greet.call({name: 'Jane Doe'}, param1, param 2, ...)
+//obj.greet.call({name: 'Jane Doe'}, param1, param 2, ...);
 //apply takes additional parameters in the form of an array for ex
-//obj.greet.apply({name: 'Jane Doe'}, [param1, params2, params3, ...])
+//obj.greet.apply({name: 'Jane Doe'}, [param1, params2, params3, ...]);
+
+
+ //Class keyword is just a syntactic sugar. Nothing behind the scenes really changes.
+
+ class Insaan {
+     constructor(firstName, lastName) {
+         this.firstName = firstName;
+         this.lastName = lastName;
+     }
+
+     greet() {
+         console.log(`Hello, ${this.firstName} ${this.lastName}`);
+     }
+ }
+
+ var aadmi = new Insaan('Chand', 'Singh');
+ aadmi.greet();
