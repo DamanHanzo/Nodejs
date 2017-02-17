@@ -100,10 +100,20 @@ var john = Object.create(person);
 john.firstName = 'Johnny';
 john.lastName = 'Boy';
 
-console.log(john.greet());
+// console.log(john.greet());
 
 
 //`: called a back tick
 
 var userName = 'John Doe';
-var saySomething = `Hello ${userName}`;
+var saySomething = `Hello ${userName}`; //template literal but only available in ES 6
+// console.log(saySomething);
+
+var obj = {
+    name: 'Johnny Boy',
+    greet: function() {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+obj.greet.call({name: "Jane Doe"});
