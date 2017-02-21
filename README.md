@@ -34,3 +34,6 @@ MIME Type: A standard for specifying the type of data being sent.
 - Stands for 'Multipurpose Internet Mail Extensions'
 
 Semantic Versioning: MAJOR.MINOR.PATCH for example 6.9.5.
+
+"^" in "express": "^4.14.1" tells npm to automatically update if there is a minor or patch release but don't update if there is a major release.
+"~" in "express": "^4.14.1" tells npm to automatically update if there is a patch release and patch relase only.
