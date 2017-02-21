@@ -32,3 +32,5 @@ Non-blocking: Doing other things without stopping your program from running.
 
 MIME Type: A standard for specifying the type of data being sent.
 - Stands for 'Multipurpose Internet Mail Extensions'
+
+Semantic Versioning: MAJOR.MINOR.PATCH for example 6.9.5.

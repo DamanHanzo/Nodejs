@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-test-app",
+  "version": "1.0.0",
+  "description": "NodeJS test App",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "moment": "^2.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamanHanzo/Nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamanHanzo/Nodejs/issues"
+  },
+  "homepage": "https://github.com/DamanHanzo/Nodejs#readme"
+}

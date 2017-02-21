@@ -165,3 +165,4 @@ greetr1.on('greet', function(data){
 });
 
 greetr1.greet('Tony');
+
